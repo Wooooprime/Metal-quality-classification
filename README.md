@@ -24,7 +24,8 @@ albumentations.Compose([
 ### 损失函数
 使用基于Focal loss的损失函数。
 相似晶粒度之间经常有相同特征，故而使用FocalLoss(l) + w * (FocalLoss(l+0.5) + FocalLoss(l-0.5))作为损失函数，l为正确标签，w为超参数。
-
+### 优化器
+余弦退火&热重启
 ### 模型融合
 比赛禁止使用超过两个模型的ensemble。
 本repo使用黑白图片训练的图片与resnet152训练的图片进行融合，output经过softmax归一后相加，权重相同(都是0.5)。
