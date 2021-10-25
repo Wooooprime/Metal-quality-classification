@@ -1,7 +1,7 @@
 # Metal quality classification
 
 利用显微镜成像的金相图片，评估定级结果（晶粒度）的分类器。类别从6.5开始到13.0，每0.5为一个级别，共为13类。
-使用PyTorch作为framework，使用resnet152进行分类。
+使用PyTorch作为framework，使用resnet152进行分类。本repo仅包含交叉验证的jupyter notebook，不包含数据与训练好的模型。
 ### 清理数据
 有较多重复图片，基于md5去重
 
